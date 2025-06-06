@@ -3,34 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Matúš Vrábel – Projekty</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Matúš Vrábel – Portfólio</title>
+  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header class="navbar">
-    <h1>Matúš Vrábel — Projekty</h1>
-    <div class="nav-icons">
-      <a href="mailto:tvojemail@example.com" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/tvojprofil" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  <header>
+    <div class="container nav">
+      <h1 class="logo">Matúš Vrábel</h1>
+      <nav>
+        <a href="#projects">Projekty</a>
+        <a href="#about">O mne</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
     </div>
   </header>
 
-  <main class="projects">
-    <section class="project-card">
-      <img src="images/projekt1.png" alt="Projekt 1">
-      <h2>Názov projektu 1</h2>
-      <p>Krátky popis projektu 1.</p>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <h2>Vitaj na mojom portfóliu</h2>
+      <p>Tu nájdeš výber mojich najzaujímavejších projektov.</p>
+    </div>
+  </section>
 
-    <section class="project-card">
-      <img src="images/projekt2.png" alt="Projekt 2">
-      <h2>Názov projektu 2</h2>
-      <p>Krátky popis projektu 2.</p>
-    </section>
+  <section id="projects" class="projects-section container">
+    <h2>Moje projekty</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/projekt1.jpg" alt="Projekt 1">
+        <h3>Názov projektu 1</h3>
+        <p>Krátky popis, technológie, výsledky...</p>
+      </div>
+      <div class="project-card">
+        <img src="images/projekt2.jpg" alt="Projekt 2">
+        <h3>Názov projektu 2</h3>
+        <p>Krátky popis, technológie, výsledky...</p>
+      </div>
+      <!-- Ďalšie projekty sem -->
+    </div>
+  </section>
 
-    <!-- Pridaj ďalšie sekcie podľa potreby -->
-  </main>
+  <section id="about" class="about-section container">
+    <h2>O mne</h2>
+    <p>Som študent kybernetiky so zameraním na bezpečnosť a vývoj softvéru. Vo voľnom čase programujem, analyzujem siete alebo tvorím bezpečnostné skripty.</p>
+  </section>
+
+  <section id="contact" class="contact-section container">
+    <h2>Kontaktuj ma</h2>
+    <p>Email: <a href="mailto:tvojemail@example.com">tvojemail@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/tvojprofil" target="_blank">github.com/tvojprofil</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Matúš Vrábel</p>
+  </footer>
 </body>
 </html>
